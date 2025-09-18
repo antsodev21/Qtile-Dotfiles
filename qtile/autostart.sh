@@ -1,6 +1,6 @@
 #!/bin/bash 
 bash ~/.screenlayout/1.sh
-feh --bg-scale /home/antsoftware21/Wallpapers/Debian.jpg &
+feh --bg-scale ~/Wallpapers/nombredelarchivo.jpg &
 cbatticon &
 nm-applet&
 volumeicon &
