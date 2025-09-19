@@ -132,18 +132,18 @@ for i in groups:
 
 layouts = [
     #layout.MonadTall(**layout_theme, single_border_width=0),
-    layout.MonadTall(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
-    layout.Stack(num_stacks=2, border_focus = ["#ff00ff", "#151a16"], border_width=4, single_margin=8, margin=8),                 
+    layout.MonadTall(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
+    layout.Stack(num_stacks=2, border_focus = ["#00ffff", "#000fff"], border_width=4, single_margin=8, margin=8),                 
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Bsp(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
-    layout.Columns(border_focus='#ff00ff', border_focus_stack=["#ff00ff"], border_on_single=True, border_width=2, margin=4),
-    layout.Floating(border_focus="#ff00ff", border_normal="#31748f",),
+    layout.Columns(border_focus='#00ffff', border_focus_stack=["#000fff"], border_on_single=True, border_width=2, margin=4),
+    layout.Floating(border_focus="#00ffff", border_normal="#000fff",),
     # layout.Matrix(),
-    layout.MonadWide(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
+    layout.MonadWide(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
     # layout.RatioTile(),
-    layout.Tile(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
-    layout.TreeTab(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
+    layout.Tile(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
+    layout.TreeTab(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
@@ -183,8 +183,9 @@ screens = [
                 widget.QuickExit(),
             ],
             24,
-             border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-             border_color=["00ffff", "000000", "FF0000", "000000"]  # Borders are magenta
+
+            border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            border_color=["FF0000", "000000", "940101", "000000"]  # Borders are magenta
         ),
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
@@ -219,7 +220,7 @@ screens = [
             ],
             24,
              border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-             border_color=["FF0000", "000000", "00ffff", "000000"]  # Borders are magenta
+             border_color=["940101", "000000", "FF0000", "000000"]  # Borders are magenta
   	),
 	# You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system m>
