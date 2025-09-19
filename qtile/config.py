@@ -134,16 +134,23 @@ layouts = [
     #layout.MonadTall(**layout_theme, single_border_width=0),
     layout.MonadTall(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
     layout.Stack(num_stacks=2, border_focus = ["#00ffff", "#000fff"], border_width=4, single_margin=8, margin=8),                 
+
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Bsp(border_focus="#ff00ff", border_normal="#31748f", border_width=2, margin=8),
+
     layout.Columns(border_focus='#00ffff', border_focus_stack=["#000fff"], border_on_single=True, border_width=2, margin=4),
     layout.Floating(border_focus="#00ffff", border_normal="#000fff",),
+
     # layout.Matrix(),
+
     layout.MonadWide(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
+
     # layout.RatioTile(),
+
     layout.Tile(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
     layout.TreeTab(border_focus="#00ffff", border_normal="#000fff", border_width=2, margin=8),
+
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
@@ -166,6 +173,7 @@ screens = [
                                 block_highlight_text_color="#1f1f1f"),
 
                 widget.Prompt(),
+		widget.CurrentLayout(),
                 widget.WindowName(),
                 widget.Chord(
                     chords_colors={
@@ -173,13 +181,12 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-               # widget.TextBox("default config", name="default"),
-               # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                # widget.TextBox("default config", name="default"),
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(),
                 widget.Clock(format="%I:%M"),
-		# widget.CurrentLayout(),
                 widget.QuickExit(),
             ],
             24,
